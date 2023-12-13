@@ -1,7 +1,9 @@
-// 2.5.O.2.5
+// mj-una
 
 // el final de una etapa
 // el inicio de otra
+
+// 2.5.O.2.5
 
 let cl = -1;
 let cielo;
