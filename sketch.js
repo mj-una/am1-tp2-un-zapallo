@@ -15,7 +15,10 @@ let expl = [];
 
 function setup() {
 
-  createCanvas(540, 960);
+  let canvas = createCanvas(540, 960);
+  canvas.style('user-select', 'none');
+  canvas.style('touch-action', 'manipulation');
+  
   windowResized();
   
   background(220);
