@@ -13,6 +13,8 @@ let z =  0;
 
 let expl = [];
 
+let bloqueo = false;
+
 function setup() {
 
   let canvas = createCanvas(540, 960);
@@ -51,6 +53,13 @@ function draw() {
 }
 
 function mouseReleased() {
+
+  if (bloqueo) return;
+  bloqueo = true;
+  setTimeout(function(){
+    bloqueo = false;
+  }, 200);
+  
   if ( cl < 12) cl++;
   else if ( cl >= 12) z++;
 }
